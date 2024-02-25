@@ -1,12 +1,12 @@
 spring:
   datasource:
-    url: jdbc:oracle:thin:@192.168.0.103:1521:orcl
-    username: hr
-    password: hr
-    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@127.0.0.1:1521:xe
+    username: system
+    password: root
+    driver-class-name: oracle.jdbc.OracleDriver
     continue-on-error: true
     hikari:
-      connection-timeout: 10000
+      connection-timeout: 20000
   thymeleaf:
     prefix: classpath:/templates/
     suffix: .html
