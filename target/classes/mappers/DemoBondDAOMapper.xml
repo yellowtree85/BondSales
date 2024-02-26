@@ -87,7 +87,7 @@
             UPDATED_AT
             ) VALUES
             (
-             null,
+            null,
             #{demoBond.bondName},
             #{demoBond.saleName},
             #{demoBond.amount},
@@ -97,25 +97,6 @@
         </foreach>
         SELECT 1 FROM DUAL
     </insert>
-<!--    -->
-<!--    &lt;!&ndash; 批量插入 &ndash;&gt;-->
-<!--    <insert id="importBonds" parameterType="java.util.List" useGeneratedKeys="false">-->
-<!--        insert into DEMO_BONDS_SALES_RECORD-->
-<!--            (-->
-<!--             BONDS_NAME,-->
-<!--             SALES_NAME,-->
-<!--             AMOUNT,-->
-<!--             CREATED_AT,-->
-<!--             UPDATED_AT-->
-<!--             ) values-->
-<!--        <foreach collection="list" item="demoBond" index="index" separator="union all">-->
-<!--            (-->
-<!--             #{demoBond.bondName},-->
-<!--             #{demoBond.saleName},-->
-<!--             #{demoBond.amount},-->
-<!--             #{demoBond.createdAt},-->
-<!--             null-->
-<!--             )-->
-<!--        </foreach>-->
-<!--    </insert>-->
+
+
 </mapper>
